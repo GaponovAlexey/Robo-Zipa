@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ROBA ZIPA 2"),
+          title: const Text("ROBA ZIPA"),
         ),
         body: RefreshIndicator(
           onRefresh: () async {
