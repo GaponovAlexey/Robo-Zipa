@@ -1,8 +1,11 @@
 part of 'coins_bloc.dart';
 
-class CoinsEvent {}
+abstract class CoinsEvent extends Equatable {}
 
 class LoadList extends CoinsEvent {
   LoadList({required this.completer});
   final Completer? completer;
+
+  @override
+  List<Object?> get props => [completer];
 }
